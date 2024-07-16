@@ -20,4 +20,6 @@ jobs:
       uses: hashicorp/setup-terraform@v1
 
     - name: Terraform Init
+      env:
+        TF_LOG: DEBUG
       run: terraform init
